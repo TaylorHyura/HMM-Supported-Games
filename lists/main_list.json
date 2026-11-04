@@ -1,0 +1,332 @@
+[
+    {
+        "ID": "mortalshell2",
+        "Name": "Mortal Shell II",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2584270/e92804cbd8a37fbf08e19c55ab6a0ce7f0f25bf5/library_capsule.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "MortalShell2\\Content\\Paks\\~Mods"
+            },
+            {
+                "Type": "hook",
+                "Directory": "MortalShell2\\Binaries\\Win64"
+            },
+            {
+                "Type": "lua",
+                "Directory": "MortalShell2\\Binaries\\Win64\\ue4ss\\Mods"
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "palworld",
+        "Name": "Palworld",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/f85c38b444047c686d44eea5f649c9ae761fd06a/library_capsule.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "Pal\\Content\\Paks\\~Mods"
+            },
+            {
+                "Type": "logicpak",
+                "Directory": "Pal\\Content\\Paks\\LogicMods"
+            },
+            {
+                "Type": "lua",
+                "Directory": "Pal\\Binaries\\Win64\\ue4ss\\Mods"
+            }
+        ],
+        "Dependencies": [
+            {
+                "Id": "REUE4SS",
+                "Name": "RE-UE4SS",
+                "Variant": "UE4SS (Experimental)",
+                "Description": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.",
+                "Author": "Okaetsu",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/57df7aed61d65c9012a11d58e812aff275b7daed/capsule_616x353_2x.jpg",
+                "WebPage": "https://github.com/Okaetsu/RE-UE4SS",
+                "Link": "https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip",
+                "Files": [
+                    {
+                        "Source": "dwmapi.dll",
+                        "Destination": "Pal\\Binaries\\Win64\\dwmapi.dll"
+                    }
+                ],
+                "Folders": [
+                    {
+                        "Source": "ue4ss",
+                        "Destination": "Pal\\Binaries\\Win64\\ue4ss"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "residentevil0biohazard0hdremaster",
+        "Name": "Resident Evil 0",
+        "Engine": "MTFramework",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/339340/library_600x900.jpg",
+        "ModDirectories": [],
+        "Dependencies": [
+            {
+                "Id": "RE0FF",
+                "Name": "Fusion Fix",
+                "Variant": "Resident Evil 0",
+                "Description": "Plugin to make or improve widescreen resolutions support, add more features and fix bugs.",
+                "Author": "ThirteenAG",
+                "CoverURL": "https://fusionfix.io/screens/re0/main2.png",
+                "WebPage": "https://fusionfix.io/wfp#re0",
+                "Link": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/re0/ResidentEvil0.FusionFix.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ],
+                "Folders": [
+                    {
+                        "Source": "scripts",
+                        "Destination": "scripts"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "residentevil22019",
+        "Name": "Resident Evil 2",
+        "Engine": "REEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/library_600x900.jpg",
+        "ModDirectories": [],
+        "Dependencies": [
+            {
+                "Id": "REFRT",
+                "Name": "REFramework",
+                "Variant": "REFramework RT",
+                "Description": "A mod loader and scripting platform for RE Engine games.",
+                "Author": "praydog",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/page_bg_raw.jpg",
+                "WebPage": "https://reframework.praydog.com",
+                "Link": "https://github.com/praydog/REFramework/releases/latest/download/RE2.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ]
+            },
+            {
+                "Id": "REF",
+                "Name": "REFramework",
+                "Variant": "REFramework Non-RT",
+                "Description": "A mod loader and scripting platform for RE Engine games.",
+                "Author": "praydog",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/page_bg_raw.jpg",
+                "WebPage": "https://reframework.praydog.com",
+                "Link": "https://github.com/praydog/REFramework/releases/latest/download/RE2_TDB66.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "residentevil32020",
+        "Name": "Resident Evil 3",
+        "Engine": "REEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/library_600x900.jpg",
+        "ModDirectories": [],
+        "Dependencies": [
+            {
+                "Id": "REFRT",
+                "Name": "REFramework",
+                "Variant": "REFramework RT",
+                "Description": "A mod loader and scripting platform for RE Engine games.",
+                "Author": "praydog",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/page_bg_raw.jpg",
+                "WebPage": "https://reframework.praydog.com",
+                "Link": "https://github.com/praydog/REFramework/releases/latest/download/RE3.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ]
+            },
+            {
+                "Id": "REF",
+                "Name": "REFramework",
+                "Variant": "REFramework Non-RT",
+                "Description": "A mod loader and scripting platform for RE Engine games.",
+                "Author": "praydog",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/page_bg_raw.jpg",
+                "WebPage": "https://reframework.praydog.com",
+                "Link": "https://github.com/praydog/REFramework/releases/latest/download/RE3_TDB67.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "residentevil42023",
+        "Name": "Resident Evil 4",
+        "Engine": "REEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg",
+        "ModDirectories": [],
+        "Dependencies": [
+            {
+                "Id": "REF",
+                "Name": "REFramework",
+                "Variant": "REFramework",
+                "Description": "A mod loader and scripting platform for RE Engine games.",
+                "Author": "praydog",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/page_bg_raw.jpg",
+                "WebPage": "https://reframework.praydog.com",
+                "Link": "https://github.com/praydog/REFramework/releases/latest/download/RE4.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "residentevilbiohazardhdremaster",
+        "Name": "Resident Evil",
+        "Engine": "MTFramework",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304240/library_600x900.jpg",
+        "ModDirectories": [],
+        "Dependencies": [
+            {
+                "Id": "REFF",
+                "Name": "Fusion Fix",
+                "Variant": "Resident Evil",
+                "Description": "Plugin to make or improve widescreen resolutions support, add more features and fix bugs.",
+                "Author": "ThirteenAG",
+                "CoverURL": "https://fusionfix.io/screens/re1/main2.png",
+                "WebPage": "https://fusionfix.io/wfp#re1",
+                "Link": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/re1/ResidentEvil.FusionFix.zip",
+                "Files": [
+                    {
+                        "Source": "dinput8.dll",
+                        "Destination": "dinput8.dll"
+                    }
+                ],
+                "Folders": [
+                    {
+                        "Source": "scripts",
+                        "Destination": "scripts"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "stellarblade",
+        "Name": "Stellar Blade",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3489700/6f2bbe8f34fc283f42acbe4ab184e9a40f76ad51/library_600x900.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "SB\\Content\\Paks\\~Mods"
+            },
+            {
+                "Type": "logicpak",
+                "Directory": "SB\\Content\\Paks\\LogicMods"
+            },
+            {
+                "Type": "lua",
+                "Directory": "SB\\Binaries\\Win64\\ue4ss\\Mods"
+            }
+        ],
+        "Dependencies": [
+            {
+                "Id": "UE4SS",
+                "Name": "UE4SS",
+                "Variant": "UE4SS (Stellar Blade)",
+                "Description": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.",
+                "Author": "Chrisr0",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3489700/22469f910e2be326ea2a70d10601e3521c7b105d/capsule_616x353_2x.jpg",
+                "WebPage": "https://github.com/Chrisr0/RE-UE4SS",
+                "Link": "https://github.com/Chrisr0/RE-UE4SS/releases/latest/download/UE4SS_v3.1.0-6.zip",
+                "Files": [
+                    {
+                        "Source": "UE4SS_v3.1.0-6\\dwmapi.dll",
+                        "Destination": "SB\\Binaries\\Win64\\dwmapi.dll"
+                    }
+                ],
+                "Folders": [
+                    {
+                        "Source": "UE4SS_v3.1.0-6\\ue4ss",
+                        "Destination": "SB\\Binaries\\Win64\\ue4ss"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
+        "ID": "thekillingantidote",
+        "Name": "The Killing Antidote",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254890/library_600x900.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "TheKillingAntidote\\Content\\Paks\\~Mods"
+            },
+            {
+                "Type": "logicpak",
+                "Directory": "TheKillingAntidote\\Content\\Paks\\LogicMods"
+            },
+            {
+                "Type": "lua",
+                "Directory": "TheKillingAntidote\\Binaries\\Win64\\ue4ss\\Mods"
+            }
+        ],
+        "Dependencies": [
+            {
+                "Id": "REUE4SS",
+                "Name": "RE-UE4SS",
+                "Variant": "UE4SS (Experimental-Latest)",
+                "Description": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.",
+                "Author": "UE4SS-RE",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254890/capsule_616x353.jpg",
+                "WebPage": "https://github.com/UE4SS-RE/RE-UE4SS",
+                "Link": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-1190-gf673aac0.zip",
+                "Files": [
+                    {
+                        "Source": "dwmapi.dll",
+                        "Destination": "TheKillingAntidote\\Binaries\\Win64\\dwmapi.dll"
+                    }
+                ],
+                "Folders": [
+                    {
+                        "Source": "ue4ss",
+                        "Destination": "TheKillingAntidote\\Binaries\\Win64\\ue4ss"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
+    }
+]
