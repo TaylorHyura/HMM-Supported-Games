@@ -1,0 +1,45 @@
+{
+	"ID": "deadasdisco",
+	"Name": "Dead as Disco",
+	"Engine": "UnrealEngine",
+	"CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/e5352e951d5e9201b63a06bba579b6cf607aac36/library_600x900.jpg",
+	"ModDirectories": [
+		{
+			"Type": "pak",
+			"Directory": "Pagoda\\Content\\Paks\\~Mods"
+		},
+        {
+			"Type": "logicpak",
+			"Directory": "Pagoda\\Content\\Paks\\LogicMods"
+		},
+		{
+			"Type": "lua",
+			"Directory": "Pagoda\\Binaries\\Win64\\ue4ss\\Mods"
+		}
+	],
+    "Dependencies": [
+        {
+            "Id": "REUE4SS",
+            "Name": "RE-UE4SS",
+            "Variant": "UE4SS (Experimental-Latest)",
+            "Description": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.",
+            "Author": "UE4SS-RE",
+            "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3404260/0de32ca6690e936f8d633464028b3751e1dc947e/capsule_616x353.jpg",
+            "WebPage": "https://github.com/UE4SS-RE/RE-UE4SS",
+            "Link": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-1197-g2b8c7686.zip",
+            "Files": [
+                {
+                    "Source": "dwmapi.dll",
+                    "Destination": "Pagoda\\Binaries\\Win64\\dwmapi.dll"
+                }
+            ],
+            "Folders": [
+                {
+                    "Source": "ue4ss",
+                    "Destination": "Pagoda\\Binaries\\Win64\\ue4ss"
+                }
+            ]
+        }
+    ],
+	"Source": "Nexus"
+}

@@ -1,0 +1,45 @@
+{
+    "ID": "thekillingantidote",
+    "Name": "The Killing Antidote",
+    "Engine": "UnrealEngine",
+    "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254890/library_600x900.jpg",
+    "ModDirectories": [
+        {
+            "Type": "pak",
+            "Directory": "TheKillingAntidote\\Content\\Paks\\~Mods"
+        },
+        {
+            "Type": "logicpak",
+            "Directory": "TheKillingAntidote\\Content\\Paks\\LogicMods"
+        },
+        {
+            "Type": "lua",
+            "Directory": "TheKillingAntidote\\Binaries\\Win64\\ue4ss\\Mods"
+        }
+    ],
+    "Dependencies": [
+        {
+            "Id": "REUE4SS",
+            "Name": "RE-UE4SS",
+            "Variant": "UE4SS (Experimental-Latest)",
+            "Description": "Lua scripting system platform, C++ Modding API, SDK generator, blueprint mod loader, live property editor and other dumping utilities for UE4/5 games.",
+            "Author": "UE4SS-RE",
+            "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254890/capsule_616x353.jpg",
+            "WebPage": "https://github.com/UE4SS-RE/RE-UE4SS",
+            "Link": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-1190-gf673aac0.zip",
+            "Files": [
+                {
+                    "Source": "dwmapi.dll",
+                    "Destination": "TheKillingAntidote\\Binaries\\Win64\\dwmapi.dll"
+                }
+            ],
+            "Folders": [
+                {
+                    "Source": "ue4ss",
+                    "Destination": "TheKillingAntidote\\Binaries\\Win64\\ue4ss"
+                }
+            ]
+        }
+    ],
+    "Source": "Nexus"
+}

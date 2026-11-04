@@ -1,0 +1,42 @@
+﻿{
+	"ID": "residentevil32020",
+	"Name": "Resident Evil 3",
+	"Engine": "REEngine",
+	"CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/library_600x900.jpg",
+	"ModDirectories": [],
+	"Dependencies": [
+		{
+			"Id": "REFRT",
+			"Name": "REFramework",
+			"Variant": "REFramework RT",
+			"Description": "A mod loader and scripting platform for RE Engine games.",
+			"Author": "praydog",
+			"CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/page_bg_raw.jpg",
+			"WebPage": "https://reframework.praydog.com",
+			"Link": "https://github.com/praydog/REFramework/releases/latest/download/RE3.zip",
+			"Files": [
+				{
+					"Source": "dinput8.dll",
+					"Destination": "dinput8.dll"
+				}
+			]
+		},
+		{
+			"Id": "REF",
+			"Name": "REFramework",
+			"Variant": "REFramework Non-RT",
+			"Description": "A mod loader and scripting platform for RE Engine games.",
+			"Author": "praydog",
+			"CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/page_bg_raw.jpg",
+			"WebPage": "https://reframework.praydog.com",
+			"Link": "https://github.com/praydog/REFramework/releases/latest/download/RE3_TDB67.zip",
+			"Files": [
+				{
+					"Source": "dinput8.dll",
+					"Destination": "dinput8.dll"
+				}
+			]
+		}
+	],
+	"Source": "Nexus"
+}
