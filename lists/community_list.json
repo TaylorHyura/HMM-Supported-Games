@@ -43,5 +43,18 @@
             }
         ],
         "Source": "Nexus"
+    },
+    {
+        "ID": "clairobscurexpedition33",
+        "Name": "Clair Obscur: Expedition 33",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "Sandfall\\Content\\Paks\\~Mods"
+            }
+        ],
+        "Source": "Nexus"
     }
 ]
