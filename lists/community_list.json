@@ -56,5 +56,34 @@
             }
         ],
         "Source": "Nexus"
+    },
+    {
+        "ID": "sporegalacticadventures",
+        "Name": "Spore: Galactic Adventures",
+        "Engine": "RenderWare",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/24720/library_600x900.jpg",
+        "Dependencies": [
+            {
+                "Id": "SML",
+                "Name": "SporeModLoader",
+                "Variant": "SporeModLoader (rolling-release)",
+                "Description": "This is a simple mod loader for Spore, it loads DLLs at runtime after Spore sets the custom memory allocator and unloads the DLLs before the custom memory allocator is unset.",
+                "Author": "Rosalie241",
+                "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/24720/capsule_616x353.jpg",
+                "WebPage": "https://github.com/Rosalie241/SporeModLoader",
+                "Link": "https://github.com/Rosalie241/SporeModLoader/releases/download/rolling-release/SporeModLoader-windows-6d7419b.zip",
+                "Folders": [
+                    {
+                        "Source": "SporebinEP1",
+                        "Destination": "SporebinEP1"
+                    },
+                    {
+                        "Source": "SporeModLoader",
+                        "Destination": "SporeModLoader"
+                    }
+                ]
+            }
+        ],
+        "Source": "Nexus"
     }
 ]
