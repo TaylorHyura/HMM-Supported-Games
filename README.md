@@ -1,10 +1,14 @@
 # HMM Supported Games
 
-The game catalog for [Hyura Mod Manager (HMM)](https://github.com/TaylorHyura/HyuraModManager).
+The game catalog for **Hyura Mod Manager (HMM)**.
 
 HMM reads these lists directly from this repository, so adding a game here makes it
 available in the app without a new HMM release. Changes go live as soon as they are
 merged into `main`.
+
+HMM builds are published on the
+[Hyura-Mod-Manager releases page](https://github.com/TaylorHyura/Hyura-Mod-Manager/releases).
+The application source is not public yet; this repository contains only the catalog.
 
 **Contributions are welcome.** Anyone can propose a change by opening a pull request.
 Every pull request is reviewed and merged by the repository owner.
@@ -296,6 +300,9 @@ Open an issue if a game entry:
 
 Include the game `ID`, what you expected, and what happened. For a broken link,
 include the URL and the response you saw (for example, a 404).
+
+For problems with HMM itself, use the
+[Hyura-Mod-Manager repository](https://github.com/TaylorHyura/Hyura-Mod-Manager).
 
 ## Attribution
 

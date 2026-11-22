@@ -128,4 +128,4 @@ catalog refresh.
 ## Questions
 
 Open an issue with the `question` label, or comment on an existing pull request. For
-HMM itself, use the [HyuraModManager repository](https://github.com/TaylorHyura/HyuraModManager).
+HMM itself, use the [Hyura-Mod-Manager repository](https://github.com/TaylorHyura/Hyura-Mod-Manager).
