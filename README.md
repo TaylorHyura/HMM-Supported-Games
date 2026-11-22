@@ -266,7 +266,7 @@ python tools/validate_lists.py
 ```
 
 The same script runs automatically as the **`validate-lists`** check on every pull
-request that changes a list. A pull request cannot be merged until that check passes.
+request. A pull request cannot be merged until that check passes.
 
 ## Review and approval
 
