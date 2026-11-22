@@ -1,0 +1,29 @@
+name: Validate game lists
+
+on:
+  pull_request:
+    paths:
+      - "lists/*.json"
+      - "tools/validate_lists.py"
+      - ".github/workflows/validate-lists.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "lists/*.json"
+      - "tools/validate_lists.py"
+      - ".github/workflows/validate-lists.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-lists:
+    name: validate-lists
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate catalog JSON
+        run: python3 tools/validate_lists.py

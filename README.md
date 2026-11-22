@@ -259,6 +259,15 @@ Then confirm:
       and any dependency installs.
 - [ ] No secrets, tokens, or local paths are included.
 
+You can also run the full validator locally:
+
+```powershell
+python tools/validate_lists.py
+```
+
+The same script runs automatically as the **`validate-lists`** check on every pull
+request that changes a list. A pull request cannot be merged until that check passes.
+
 ## Review and approval
 
 All changes to `main` go through a pull request. The `main` branch is protected:

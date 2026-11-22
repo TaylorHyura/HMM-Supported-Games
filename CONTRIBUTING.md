@@ -22,7 +22,14 @@ You can test the entry locally in HMM before submitting it.
 2. Create a branch with a short name, for example `add-game-my-game` or
    `fix-re4-cover`.
 3. Make the smallest change that solves the problem.
-4. Run the JSON and duplicate-ID checks from the [README](README.md#before-you-open-a-pull-request).
+4. Run the validator from the repository root:
+
+   ```powershell
+   python tools/validate_lists.py
+   ```
+
+   Or run the JSON and duplicate-ID checks manually from the
+   [README](README.md#before-you-open-a-pull-request).
 5. Test the entry in HMM when possible.
 6. Open a pull request against `main` and fill in the template.
 7. Respond to review comments. The owner merges the pull request when it is ready.
@@ -106,8 +113,9 @@ The repository owner reviews every pull request. Expect comments about:
 - safety of download links.
 
 The owner may edit the branch or ask you to update it. A pull request is merged only
-after the owner approves it and all review conversations are resolved. Once merged, the
-change is live for HMM users on their next catalog refresh.
+after the owner approves it, the `validate-lists` check passes, and all review
+conversations are resolved. Once merged, the change is live for HMM users on their next
+catalog refresh.
 
 ## Security and privacy
 
