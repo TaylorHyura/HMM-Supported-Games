@@ -45,6 +45,23 @@
         "Source": "Nexus"
     },
     {
+        "ID": "payday3",
+        "Name": "PAYDAY 3",
+        "Engine": "UnrealEngine",
+        "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1272080/2ce51e2cf233af163f3af390f24465e4dd711a3e/library_capsule.jpg",
+        "ModDirectories": [
+            {
+                "Type": "pak",
+                "Directory": "Pagoda\\Content\\Paks\\~Mods"
+            },
+            {
+                "Type": "logicpak",
+                "Directory": "Pagoda\\Content\\Paks\\LogicMods"
+            }
+        ],
+        "Source": "Nexus"
+    },
+    {
         "ID": "clairobscurexpedition33",
         "Name": "Clair Obscur: Expedition 33",
         "Engine": "UnrealEngine",
