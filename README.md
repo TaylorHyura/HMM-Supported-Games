@@ -137,7 +137,7 @@ Each item in a list describes one game. HMM deserializes these keys into its
 | --- | --- | --- |
 | `ID` | Yes | Stable identifier for the game. When the game has a Nexus domain, use it lowercased. HMM uses the ID for `SupportedGames/<ID>.json`, covers and Nexus URLs, so never change it after release. Use only lowercase letters, digits, `-` and `_`. |
 | `Name` | Yes | Display name shown in the app. |
-| `Engine` | Yes | Engine handler to use. See [supported engines](#supported-engines). |
+| `Engine` | Yes | Native handler to use, or the game's engine name for Hyura-only entries. See [supported engines](#supported-engines). |
 | `CoverURL` | Strongly recommended | Direct HTTPS URL to a portrait cover image. HMM downloads and caches it. See [Covers](#covers). |
 | `ModDirectories` | For Unreal Engine | Where each kind of mod file is installed. Use `[]` for engines that do not need it. |
 | `Dependencies` | No | Loaders or tools the game needs, such as REFramework or UE4SS. Omit the key when there are none. |
@@ -146,14 +146,27 @@ Each item in a list describes one game. HMM deserializes these keys into its
 
 ### Supported engines
 
+HMM has native handlers for the engines below. A handler detects and installs that
+engine's usual mod formats automatically.
+
 | Engine value | What HMM understands |
 | --- | --- |
 | `UnrealEngine` | `.pak` mods, LogicMods, loose Lua and DLL mods (UE4SS-style), and overwrite/loader mods. `ModDirectories` is required. |
 | `REEngine` | REFramework plugin DLLs, Fluffy-style `modinfo.ini` packages (including addons), and PAK invalidation for `natives` files. |
 | `MTFramework` | `nativePC`-style archives and overwrite mods. |
-| `RenderWare` | No general mod handler. Entries for this engine are limited to dependencies and Hyura-format packages. |
+| `RenderWare` | No native handler. Hyura packages still install. |
 
-Use the exact spelling shown above; the value is case-sensitive in the app.
+**Any engine is supported when the mod is a Hyura package.** Hyura packages use HMM's
+native `hyuramod.json` manifest and are installed by the app instead of an engine
+handler. They work on any engine; each component folder simply mirrors the game's
+install layout. See the
+[Hyura mod format](https://github.com/TaylorHyura/Hyura-Mod-Manager#hyura-mod-format)
+for the manifest fields and install behavior.
+
+`Engine` is still required. For a game whose engine has no native handler, use the
+engine's name; the validator warns about values outside the table so they can be
+reviewed. Only Hyura packages will install for such an entry. For the handlers above,
+use the exact casing shown; the value is case-sensitive in the app.
 
 ## Mod directories
 
@@ -255,7 +268,7 @@ Then confirm:
 
 - [ ] The new entry is in `lists/community_list.json` and nowhere else.
 - [ ] `ID` is lowercase, unique, and matches the game's Nexus domain when it has one.
-- [ ] `Engine` is one of `UnrealEngine`, `REEngine`, `MTFramework`, or `RenderWare`.
+- [ ] `Engine` is a recognized handler, or the game's engine name for a Hyura-only entry.
 - [ ] Unreal Engine entries have correct `ModDirectories` paths checked against a real install.
 - [ ] `CoverURL` opens as an image in a private browser window.
 - [ ] Dependency `Link` values download an archive directly, without a login.
@@ -283,7 +296,8 @@ The owner checks:
 
 - The entry matches the schema and the formatting rules.
 - Paths, download links and cover URLs are correct.
-- The game is actually moddable and the submitted engine handler fits it.
+- The game is actually moddable, and the engine handler or Hyura package matches how
+  its mods are installed.
 - Nothing unsafe, malicious, or unrelated is included.
 
 Community entries may be promoted to `lists/main_list.json` once they have been tested

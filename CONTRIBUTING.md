@@ -67,7 +67,8 @@ Before submitting, confirm:
 - [ ] The new game is appended to `lists/community_list.json`.
 - [ ] `ID` is lowercase, unique across both lists, and matches the game's Nexus domain
       when it has one.
-- [ ] `Engine` is exactly `UnrealEngine`, `REEngine`, `MTFramework`, or `RenderWare`.
+- [ ] `Engine` is a recognized handler (`UnrealEngine`, `REEngine`, `MTFramework` or
+      `RenderWare`), or the game's engine name for a Hyura-only entry.
 - [ ] Unreal Engine entries have `ModDirectories` paths checked against a real install.
 - [ ] `CoverURL` is a direct HTTPS image link that works in a private browser window.
 - [ ] Dependency `Link` values download an archive directly, without a login.
@@ -107,7 +108,7 @@ Avoid vague subjects such as `update`, `fix`, or `changes`.
 The repository owner reviews every pull request. Expect comments about:
 
 - accuracy of paths, links, and metadata,
-- whether the engine handler fits the game,
+- whether the engine handler or Hyura package fits the game,
 - duplicate or conflicting IDs,
 - unrelated formatting changes,
 - safety of download links.

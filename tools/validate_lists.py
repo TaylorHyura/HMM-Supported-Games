@@ -412,7 +412,10 @@ def validate_game(
 
     engine = require_string(game, "Engine", label, report)
     if engine is not None and engine not in ENGINES:
-        report.error(f"{label}: 'Engine' must be one of {', '.join(sorted(ENGINES))}")
+        warnings.warning(
+            f"{label}: 'Engine' is not a recognized native handler; "
+            "only Hyura packages will install for this entry"
+        )
 
     source = require_string(game, "Source", label, report)
     if source is not None and source not in SOURCES:

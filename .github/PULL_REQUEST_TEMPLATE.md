@@ -27,7 +27,8 @@
 - [ ] I changed only the files needed for this pull request.
 - [ ] The changed list is valid JSON with 4-space indentation.
 - [ ] The game ID is unique across both lists and matches the game's Nexus domain.
-- [ ] The engine value is spelled exactly as the schema requires.
+- [ ] The engine value is a recognized handler, or the game's engine name for a
+      Hyura-only entry.
 - [ ] Unreal Engine mod directories were checked against a real game install.
 - [ ] The cover URL opens as an image in a private browser window.
 - [ ] Dependency download links return an archive directly, without a login.
