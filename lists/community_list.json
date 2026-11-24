@@ -52,11 +52,15 @@
         "ModDirectories": [
             {
                 "Type": "pak",
-                "Directory": "Pagoda\\Content\\Paks\\~Mods"
+                "Directory": "PAYDAY3\\Content\\Paks\\~Mods"
             },
             {
                 "Type": "logicpak",
-                "Directory": "Pagoda\\Content\\Paks\\LogicMods"
+                "Directory": "PAYDAY3\\Content\\Paks\\LogicMods"
+            },
+            {
+                "Type": "lua",
+                "Directory": "PAYDAY3\\Binaries\\Win64\\ue4ss\\Mods"
             }
         ],
         "Source": "Nexus"
