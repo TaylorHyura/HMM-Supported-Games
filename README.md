@@ -15,16 +15,6 @@ repository contains only the catalog.
 Every pull request is reviewed and merged by the repository owner. See
 [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and review requirements.
 
-## Project repositories
-
-HMM is one project split across three repositories:
-
-| Repository | Purpose |
-| --- | --- |
-| [Hyura-Mod-Manager](https://github.com/TaylorHyura/Hyura-Mod-Manager) | Public releases, downloads and bug reports |
-| This repository (`HMM-Supported-Games`) | Game catalog read by the app; community game support goes here |
-| `HyuraModManager` | Application source, private during pre-release |
-
 ## Contents
 
 - [The two lists](#the-two-lists)
