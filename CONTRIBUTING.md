@@ -6,6 +6,10 @@ so most contributions are small JSON changes.
 The full schema, examples, and validation checks live in the [README](README.md).
 This page covers the workflow and what reviewers expect.
 
+This catalog is the game-support part of the HMM project. Public releases and bug
+reports live in [Hyura-Mod-Manager](https://github.com/TaylorHyura/Hyura-Mod-Manager),
+and the application source is private during pre-release.
+
 ## Ways to contribute
 
 - **Add a game.** Append one entry to `lists/community_list.json`.
@@ -22,7 +26,7 @@ You can test the entry locally in HMM before submitting it.
 2. Create a branch with a short name, for example `add-game-my-game` or
    `fix-re4-cover`.
 3. Make the smallest change that solves the problem.
-4. Run the validator from the repository root:
+4. Run the validator from the repository root (Python 3.10 or newer):
 
    ```powershell
    python tools/validate_lists.py

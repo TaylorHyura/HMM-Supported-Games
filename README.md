@@ -6,16 +6,31 @@ HMM reads these lists directly from this repository, so adding a game here makes
 available in the app without a new HMM release. Changes go live as soon as they are
 merged into `main`.
 
-HMM builds are published on the
-[Hyura-Mod-Manager releases page](https://github.com/TaylorHyura/Hyura-Mod-Manager/releases).
-The application source is not public yet; this repository contains only the catalog.
+HMM is in pre-release. Public builds will be published on the
+[Hyura-Mod-Manager releases page](https://github.com/TaylorHyura/Hyura-Mod-Manager/releases);
+the first release will be `1.0.0`. The application source is not public yet; this
+repository contains only the catalog.
 
 **Contributions are welcome.** Anyone can propose a change by opening a pull request.
-Every pull request is reviewed and merged by the repository owner.
+Every pull request is reviewed and merged by the repository owner. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and review requirements.
+
+## Project repositories
+
+HMM is one project split across three repositories:
+
+| Repository | Purpose |
+| --- | --- |
+| [Hyura-Mod-Manager](https://github.com/TaylorHyura/Hyura-Mod-Manager) | Public releases, downloads and bug reports |
+| This repository (`HMM-Supported-Games`) | Game catalog read by the app; community game support goes here |
+| `HyuraModManager` | Application source, private during pre-release |
+
+## Contents
 
 - [The two lists](#the-two-lists)
 - [Adding a game](#adding-a-game)
 - [Entry format](#entry-format)
+- [Supported engines](#supported-engines)
 - [Mod directories](#mod-directories)
 - [Dependencies](#dependencies)
 - [Covers](#covers)
@@ -135,7 +150,7 @@ Each item in a list describes one game. HMM deserializes these keys into its
 
 | Field | Required | Description |
 | --- | --- | --- |
-| `ID` | Yes | Stable identifier for the game. When the game has a Nexus domain, use it lowercased. HMM uses the ID for `SupportedGames/<ID>.json`, covers and Nexus URLs, so never change it after release. Use only lowercase letters, digits, `-` and `_`. |
+| `ID` | Yes | Stable identifier for the game. When the game has a Nexus domain, use it lowercased. HMM uses the ID for `SupportedGames/<ID>.json`, covers and Nexus URLs, so never change it after release. Use only lowercase letters, digits, `-` and `_` (1-100 characters). |
 | `Name` | Yes | Display name shown in the app. |
 | `Engine` | Yes | Native handler to use, or the game's engine name for Hyura-only entries. See [supported engines](#supported-engines). |
 | `CoverURL` | Strongly recommended | Direct HTTPS URL to a portrait cover image. HMM downloads and caches it. See [Covers](#covers). |
@@ -276,7 +291,8 @@ Then confirm:
       and any dependency installs.
 - [ ] No secrets, tokens, or local paths are included.
 
-You can also run the full validator locally:
+You can also run the full validator locally. It needs Python 3.10 or newer and uses
+only the standard library:
 
 ```powershell
 python tools/validate_lists.py
