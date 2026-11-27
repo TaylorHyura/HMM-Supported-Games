@@ -73,6 +73,7 @@ Before submitting, confirm:
       when it has one.
 - [ ] `Engine` is a recognized handler (`UnrealEngine`, `REEngine`, `MTFramework` or
       `RenderWare`), or the game's engine name for a Hyura-only entry.
+- [ ] `Executable` names the game's real `.exe`, relative to the game install root.
 - [ ] Unreal Engine entries have `ModDirectories` paths checked against a real install.
 - [ ] `CoverURL` is a direct HTTPS image link that works in a private browser window.
 - [ ] Dependency `Link` values download an archive directly, without a login.

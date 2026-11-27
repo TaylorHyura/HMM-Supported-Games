@@ -25,7 +25,16 @@ ENGINES = {"UnrealEngine", "REEngine", "MTFramework", "RenderWare"}
 SOURCES = {"Nexus"}
 MOD_DIRECTORY_TYPES = {"pak", "logicpak", "lua", "hook"}
 
-GAME_KEYS = {"ID", "Name", "Engine", "CoverURL", "ModDirectories", "Dependencies", "Source"}
+GAME_KEYS = {
+    "ID",
+    "Name",
+    "Engine",
+    "Executable",
+    "CoverURL",
+    "ModDirectories",
+    "Dependencies",
+    "Source",
+}
 MOD_DIRECTORY_KEYS = {"Type", "Directory"}
 DEPENDENCY_KEYS = {
     "Id",
@@ -416,6 +425,13 @@ def validate_game(
             f"{label}: 'Engine' is not a recognized native handler; "
             "only Hyura packages will install for this entry"
         )
+
+    if "Executable" not in game:
+        warnings.warning(f"{label}: 'Executable' is recommended")
+    else:
+        executable = require_string(game, "Executable", label, report)
+        if executable is not None:
+            check_relative_path(executable, label, "Executable", report)
 
     source = require_string(game, "Source", label, report)
     if source is not None and source not in SOURCES:

@@ -75,6 +75,7 @@ A game that uses an existing engine handler and only needs dependency support:
     "ID": "residentevil42023",
     "Name": "Resident Evil 4",
     "Engine": "REEngine",
+    "Executable": "re4.exe",
     "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg",
     "ModDirectories": [],
     "Source": "Nexus"
@@ -90,6 +91,7 @@ An Unreal Engine game with mod directories and one dependency:
     "ID": "palworld",
     "Name": "Palworld",
     "Engine": "UnrealEngine",
+    "Executable": "Palworld.exe",
     "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/f85c38b444047c686d44eea5f649c9ae761fd06a/library_capsule.jpg",
     "ModDirectories": [
         {
@@ -143,6 +145,7 @@ Each item in a list describes one game. HMM deserializes these keys into its
 | `ID` | Yes | Stable identifier for the game. When the game has a Nexus domain, use it lowercased. HMM uses the ID for `SupportedGames/<ID>.json`, covers and Nexus URLs, so never change it after release. Use only lowercase letters, digits, `-` and `_` (1-100 characters). |
 | `Name` | Yes | Display name shown in the app. |
 | `Engine` | Yes | Native handler to use, or the game's engine name for Hyura-only entries. See [supported engines](#supported-engines). |
+| `Executable` | Recommended | The game's main `.exe`, relative to the game install root: `re4.exe` or `SporebinEP1\\SporeApp.exe`. HMM uses it to confirm the game is installed before deploying. When omitted, HMM only checks that the game folder exists. |
 | `CoverURL` | Strongly recommended | Direct HTTPS URL to a portrait cover image. HMM downloads and caches it. See [Covers](#covers). |
 | `ModDirectories` | For Unreal Engine | Where each kind of mod file is installed. Use `[]` for engines that do not need it. |
 | `Dependencies` | No | Loaders or tools the game needs, such as REFramework or UE4SS. Omit the key when there are none. |
@@ -274,6 +277,7 @@ Then confirm:
 - [ ] The new entry is in `lists/community_list.json` and nowhere else.
 - [ ] `ID` is lowercase, unique, and matches the game's Nexus domain when it has one.
 - [ ] `Engine` is a recognized handler, or the game's engine name for a Hyura-only entry.
+- [ ] `Executable` names the game's real `.exe`, relative to the game install root.
 - [ ] Unreal Engine entries have correct `ModDirectories` paths checked against a real install.
 - [ ] `CoverURL` opens as an image in a private browser window.
 - [ ] Dependency `Link` values download an archive directly, without a login.

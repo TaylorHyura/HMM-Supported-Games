@@ -3,6 +3,7 @@
         "ID": "mortalshell2",
         "Name": "Mortal Shell II",
         "Engine": "UnrealEngine",
+        "Executable": "MortalShell2.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2584270/e92804cbd8a37fbf08e19c55ab6a0ce7f0f25bf5/library_capsule.jpg",
         "ModDirectories": [
             {
@@ -24,6 +25,7 @@
         "ID": "palworld",
         "Name": "Palworld",
         "Engine": "UnrealEngine",
+        "Executable": "Palworld.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/f85c38b444047c686d44eea5f649c9ae761fd06a/library_capsule.jpg",
         "ModDirectories": [
             {
@@ -69,6 +71,7 @@
         "ID": "residentevil0biohazard0hdremaster",
         "Name": "Resident Evil 0",
         "Engine": "MTFramework",
+        "Executable": "re0hd.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/339340/library_600x900.jpg",
         "ModDirectories": [],
         "Dependencies": [
@@ -101,6 +104,7 @@
         "ID": "residentevil22019",
         "Name": "Resident Evil 2",
         "Engine": "REEngine",
+        "Executable": "re2.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/library_600x900.jpg",
         "ModDirectories": [],
         "Dependencies": [
@@ -143,6 +147,7 @@
         "ID": "residentevil32020",
         "Name": "Resident Evil 3",
         "Engine": "REEngine",
+        "Executable": "re3.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/library_600x900.jpg",
         "ModDirectories": [],
         "Dependencies": [
@@ -185,6 +190,7 @@
         "ID": "residentevil42023",
         "Name": "Resident Evil 4",
         "Engine": "REEngine",
+        "Executable": "re4.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900.jpg",
         "ModDirectories": [],
         "Dependencies": [
@@ -211,6 +217,7 @@
         "ID": "residentevilbiohazardhdremaster",
         "Name": "Resident Evil",
         "Engine": "MTFramework",
+        "Executable": "bhd.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304240/library_600x900.jpg",
         "ModDirectories": [],
         "Dependencies": [
@@ -243,6 +250,7 @@
         "ID": "stellarblade",
         "Name": "Stellar Blade",
         "Engine": "UnrealEngine",
+        "Executable": "SB.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3489700/6f2bbe8f34fc283f42acbe4ab184e9a40f76ad51/library_600x900.jpg",
         "ModDirectories": [
             {
@@ -288,6 +296,7 @@
         "ID": "thekillingantidote",
         "Name": "The Killing Antidote",
         "Engine": "UnrealEngine",
+        "Executable": "TheKillingAntidote.exe",
         "CoverURL": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2254890/library_600x900.jpg",
         "ModDirectories": [
             {

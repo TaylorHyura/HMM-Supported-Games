@@ -20,6 +20,7 @@
 | Game ID | |
 | Game name | |
 | Engine | |
+| Executable | |
 | Target list | `lists/community_list.json` |
 
 ## Checklist
@@ -29,6 +30,7 @@
 - [ ] The game ID is unique across both lists and matches the game's Nexus domain.
 - [ ] The engine value is a recognized handler, or the game's engine name for a
       Hyura-only entry.
+- [ ] The `Executable` path points at the game's real `.exe` under the install root.
 - [ ] Unreal Engine mod directories were checked against a real game install.
 - [ ] The cover URL opens as an image in a private browser window.
 - [ ] Dependency download links return an archive directly, without a login.
